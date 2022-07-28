@@ -39,7 +39,7 @@ void pca9555::pin_mode(config_ports_t *config_ports)
 {
   uint8_t reg_config[2] = {config_ports->config_port0.all, config_ports->config_port1.all};
   twi_write(this->address, cp_0, reg_config, 2);
-  read_input();
+  read_input(); // to clear interrupts (if any)
 }
 
 /**
