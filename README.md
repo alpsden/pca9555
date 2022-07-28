@@ -4,7 +4,7 @@ Easy to use driver for PCA9555(I2C) to use with rp2040. Written in C++
 
 ## Sample Code
 ```c++
-**
+/**
  * @file main.c
  * @author Mudit Sharma
  * @brief 
