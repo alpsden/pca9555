@@ -84,7 +84,7 @@ typedef struct
 typedef union
 {
     uint8_t all;
-    struct
+    struct __attribute__((packed, aligned(1)))
     {
         uint8_t pin0 : 1;
         uint8_t pin1 : 1;
@@ -110,7 +110,7 @@ typedef struct
 typedef union
 {
     uint8_t all;
-    struct
+    struct __attribute__((packed, aligned(1)))
     {
         uint8_t pin0 : 1;
         uint8_t pin1 : 1;
